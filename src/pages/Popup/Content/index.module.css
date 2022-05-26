@@ -1,0 +1,5 @@
+.popup-content-wrap{
+  border-bottom: 1px solid skyblue;
+  min-height: 300px;
+  flex: 1;
+}

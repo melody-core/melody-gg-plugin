@@ -1,0 +1,16 @@
+[{
+  "role": 0,
+  "roleName": "前端开发"
+}, {
+  "role": 1,
+  "roleName": "后端开发"
+}, {
+  "role": 2,
+  "roleName": "产品"
+}, {
+  "role": 3,
+  "roleName": "设计"
+}, {
+  "role": 4,
+  "roleName": "人力资源"
+}]

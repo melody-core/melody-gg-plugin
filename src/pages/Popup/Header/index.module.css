@@ -1,0 +1,21 @@
+.popup-header-wrap{
+  border-bottom: 1px solid skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-wrap:hover{
+  cursor: pointer;
+}
+.role-name{
+  color: whitesmoke;
+}
+.user-name{
+  margin-left: 6px;
+  color: whitesmoke;
+}
