@@ -2,8 +2,8 @@
  * @Author: 六弦(melodyWxy)
  * @Date: 2022-05-25 10:09:54
  * @LastEditors: 六弦(melodyWxy)
- * @LastEditTime: 2022-05-25 17:25:32
- * @FilePath: /vue2-vite-ts/Users/wxy/codeWorks/sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/Content/Catalogue/effect.ts
+ * @LastEditTime: 2022-05-27 14:01:28
+ * @FilePath: /sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/Content/Catalogue/effect.ts
  * @Description: update here
  */
 
@@ -13,7 +13,7 @@ import { useState, useEffect, useCallback } from 'react';
 
 import * as FUNC_LIST from '../../lib'
 import eventStore from '../../store';
-import { getStoreData, setStoreData } from '../../../../utils/storage';
+import { getStoreData, setStoreData } from '../../utils/storage';
 import { CatalogueEventSet } from '../../store/eventSet';
 
 

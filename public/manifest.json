@@ -23,7 +23,13 @@
   "background": {
     "service_worker": "background.js"
   },
+  "host_permissions": [
+    "*://*/*"
+  ],
   "permissions": [
-    "storage"
+    "storage",
+    "declarativeNetRequestFeedback",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequest"
   ]
 }

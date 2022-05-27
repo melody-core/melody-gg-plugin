@@ -2,8 +2,8 @@
  * @Author: 六弦(melodyWxy)
  * @Date: 2022-05-24 18:09:18
  * @LastEditors: 六弦(melodyWxy)
- * @LastEditTime: 2022-05-25 14:30:05
- * @FilePath: /vue2-vite-ts/Users/wxy/codeWorks/sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/lib/ChangeVersion/configular.ts
+ * @LastEditTime: 2022-05-27 11:03:24
+ * @FilePath: /sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/lib/ChangeVersion/configular.ts
  * @Description: update here
  */
 import { LIB_TYPES } from './../effect'
