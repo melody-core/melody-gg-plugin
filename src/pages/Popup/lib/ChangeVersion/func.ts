@@ -2,11 +2,10 @@
  * @Author: 六弦(melodyWxy)
  * @Date: 2022-05-27 11:24:40
  * @LastEditors: 六弦(melodyWxy)
- * @LastEditTime: 2022-05-27 18:24:07
- * @FilePath: /sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/lib/ChangeVersion/func.ts
+ * @LastEditTime: 2022-06-10 09:59:34
+ * @FilePath: /bui-local/Users/wxy/codeWorks/sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/lib/ChangeVersion/func.ts
  * @Description: update here
  */
-import { AnyRecord } from 'dns';
 import { GetStoreData } from '../../utils/type';
 const CHANGE_VERSION = 'CHANGE_VERSION'
 

@@ -2,15 +2,15 @@
  * @Author: 六弦(melodyWxy)
  * @Date: 2022-05-15 05:28:28
  * @LastEditors: 六弦(melodyWxy)
- * @LastEditTime: 2022-05-25 17:24:23
- * @FilePath: /vue2-vite-ts/Users/wxy/codeWorks/sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/Content/Catalogue/index.tsx
+ * @LastEditTime: 2022-06-13 11:12:55
+ * @FilePath: /bui-local/Users/wxy/codeWorks/sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/Content/Catalogue/index.tsx
  * @Description: update here
  */
 
 import { Tree, Card, Modal } from 'antd'
 import XForm from '../../../../components/XForm';
 import MOCK_CATALOGUES from './../../../../MOCK_DATA/catalogue.json'; 
-import { useFunctionSelect } from './effect'
+import { useDataSource, useFunctionSelect } from './effect'
 
 import type { FC } from 'react';
 import type { CatalogueProps } from './type'
@@ -19,6 +19,7 @@ import styles from './index.module.css'
 
 
 const Catalogue: FC<CatalogueProps> = ({setCuRole}) => {
+  const {treeData} = useDataSource();
   const {
     handleFuncSelect,
     isShowModal,
@@ -36,7 +37,7 @@ const Catalogue: FC<CatalogueProps> = ({setCuRole}) => {
       })}>返回角色选择</a>}
     >
       <Tree 
-        treeData={MOCK_CATALOGUES}
+        treeData={treeData}
         onSelect={handleFuncSelect}
       />
       {isShowModal && <Modal 
