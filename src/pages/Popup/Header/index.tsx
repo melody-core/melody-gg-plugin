@@ -24,10 +24,10 @@ const Header:FC<HeaderProps> = ({ isLogin, userInfo = {}, getUserInfo, currentRo
   return (
       <Layout.Header className={styles['popup-header-wrap']} style={{padding: '0 15px'}}>
         <div className={styles['role-name']}>{currentRole?.roleName || '请先选择角色'}</div>
-        {isLogin ? (
+        {true ? (
           <div className={styles['header-wrap']}>
             <Avatar size="large" icon={<UserOutlined />} />
-            <div className={styles['user-name']}>name</div>
+            <div className={styles['user-name']}>六弦</div>
           </div>
         ): (
           <a onClick={getUserInfo}>登录账号</a>

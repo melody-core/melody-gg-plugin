@@ -24,9 +24,9 @@ export const useUserInfo = () => {
     // todoSth
     message.warn('无法登录，等待运维接入此功能~')
   }, [])
-  useEffect(()=>{
-    getUserInfo();
-  }, []);
+  // useEffect(()=>{
+  //   getUserInfo();
+  // }, []);
   const setCuRole = useCallback((role: Role)=> () => {
     setCurrentRole(role);
   }, [])

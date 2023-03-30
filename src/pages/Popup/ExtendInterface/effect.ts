@@ -1,18 +1,19 @@
 /*
  * @Author: 六弦(melodyWxy)
  * @Date: 2022-05-25 13:29:36
- * @LastEditors: 六弦(melodyWxy)
- * @LastEditTime: 2022-05-27 14:02:12
+ * @LastEditors: xinyu_wang06 xinyu.wang06@mihoyo.com
+ * @LastEditTime: 2023-03-30 11:53:44
  * @FilePath: /sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/ExtendInterface/effect.ts
  * @Description: update here
  */
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef } from "react";
 
-import eventStore from "../store"
+import eventStore from "../store";
 import { CatalogueEventSet } from '../store/eventSet';
-import * as FuncLibModules from './../lib'
-import { getAllStoreData, setStoreData } from '../utils/storage'
+import * as FuncLibModules from './../lib';
+import { getAllStoreData, setStoreData } from '../utils/storage';
+
 
 import type { SelectKeyLib } from "../Content/Catalogue/type";
 
@@ -21,10 +22,10 @@ import type { SelectKeyLib } from "../Content/Catalogue/type";
  * @desc 功能列表tabs的处理 
  */
 export const useFuncList = () => {
-  const keyRenderIndexRef = useRef<number>(0)
+  const keyRenderIndexRef = useRef<number>(0);
   const defaultTabActiveKeyRef = useRef('');
-  const funcListRef = useRef<Record<any,any>[]>([])
-  const [showFuncList, setFuncList] = useState<Record<any,any>[]>([])
+  const funcListRef = useRef<Record<any,any>[]>([]);
+  const [showFuncList, setFuncList] = useState<Record<any,any>[]>([]);
   // 同步缓存数据
   useEffect(()=>{
     getAllStoreData()
@@ -61,7 +62,7 @@ export const useFuncList = () => {
       keyRenderIndexRef.current = keyRenderIndexRef.current + 1;
       const funcList = funcListRef.current;
       const { belonging } = args[0];
-      defaultTabActiveKeyRef.current = belonging
+      defaultTabActiveKeyRef.current = belonging;
       const targetIndex = funcList.findIndex(item => item.belonging === belonging);
       if(targetIndex > -1){
         funcList[targetIndex] = {
@@ -92,7 +93,6 @@ export const useFuncList = () => {
       eventStore.removeEvent(CatalogueEventSet.FuncConfigSave);
     }
   }, [])
-
 
   return {
     funcList: showFuncList,

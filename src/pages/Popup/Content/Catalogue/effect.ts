@@ -1,8 +1,8 @@
 /*
  * @Author: 六弦(melodyWxy)
  * @Date: 2022-05-25 10:09:54
- * @LastEditors: 六弦(melodyWxy)
- * @LastEditTime: 2022-06-13 11:13:17
+ * @LastEditors: xinyu_wang06 xinyu.wang06@mihoyo.com
+ * @LastEditTime: 2023-03-30 13:59:39
  * @FilePath: /bui-local/Users/wxy/codeWorks/sp-pub/sp-clis/sp-gg-plugin/src/pages/Popup/Content/Catalogue/effect.ts
  * @Description: update here
  */

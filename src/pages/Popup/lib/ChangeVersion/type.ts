@@ -10,11 +10,13 @@
 
 export enum ChangeVersionKeys{
   is_open = 'is_open',
-  version_tag = 'version_tag',
+  tag_value = 'tag_value',
+  tag_key = 'tag_key'
 }
 
 export interface ChangeVersionBaseProps {
   onFinish: (values?: Record<any, any>) => void
   [ChangeVersionKeys.is_open]: boolean,
-  [ChangeVersionKeys.version_tag]: string
+  [ChangeVersionKeys.tag_value]: string,
+  [ChangeVersionKeys.tag_key]: string
 }

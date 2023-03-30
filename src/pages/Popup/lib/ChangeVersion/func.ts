@@ -35,16 +35,19 @@ const getStoreData: GetStoreData = (keyList) => new Promise((resolve, reject)=>{
 
 
 export const ChangeVersionFunc = async (values?: Record<any, any>) => {
-  let is_open, version_tag;
+  let is_open, tag_value, tag_key;
   if(values){
     is_open = values.is_open
-    version_tag = values.version_tag
+    tag_key = values.tag_key
+    tag_value = values.tag_value
   }else{
     const storageData = await getStoreData([`${CHANGE_VERSION}-config`]);
     const nValues = storageData[`${CHANGE_VERSION}-config`] || {}
     is_open = nValues.is_open
-    version_tag = nValues.version_tag
+    tag_key = nValues.tag_key
+    tag_value = nValues.tag_value
   }
+
 
   const rules = await chrome.declarativeNetRequest.getDynamicRules()
   const target = rules.find(item => item.id === ID);
@@ -63,9 +66,9 @@ export const ChangeVersionFunc = async (values?: Record<any, any>) => {
             type: 'modifyHeaders' as any,
             requestHeaders: [
               { 
-                header: 'x-version', 
+                header: tag_key, 
                 operation: 'set' as any, 
-                value: version_tag
+                value: tag_value
               },
             ],
           },

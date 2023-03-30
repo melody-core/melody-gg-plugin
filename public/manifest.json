@@ -1,5 +1,5 @@
 {
-  "name": "sp-gg-plugin",
+  "name": "mhy-gg-plugin",
   "version": "1.12.0",
   "manifest_version": 3,
   "description": "强大的谷歌一站式办公专用效能工具，集成式效能工具",
@@ -9,16 +9,7 @@
   "action": {
     "default_popup": "popup.html",
     "default_icon": "popup.png",
-    "default_title": "谷歌办公助手"
-  },
-  "commands": {
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+O",
-        "mac": "MacCtrl+Shift+O"
-      },
-      "description": "打开 popup.html"
-    }
+    "default_title": "米二哈办公助手"
   },
   "background": {
     "service_worker": "background.js"
@@ -28,6 +19,9 @@
   ],
   "permissions": [
     "storage",
+    "tabs",
+    "activeTab",
+    "scripting",
     "declarativeNetRequestFeedback",
     "declarativeNetRequestWithHostAccess",
     "declarativeNetRequest"

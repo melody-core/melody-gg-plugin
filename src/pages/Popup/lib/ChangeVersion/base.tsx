@@ -17,7 +17,8 @@ import type { ChangeVersionBaseProps } from './type'
 
 export const Base: FC<ChangeVersionBaseProps> = ({
   is_open,
-  version_tag,
+  tag_key,
+  tag_value,
   onFinish,
 }) => {
   return (
@@ -29,7 +30,8 @@ export const Base: FC<ChangeVersionBaseProps> = ({
           name: `${configular.config.props.name || configular.belonging}_base`,
           initialValues: {
             is_open,
-            version_tag,
+            tag_key,
+            tag_value,
           },
           onFinish
         }
